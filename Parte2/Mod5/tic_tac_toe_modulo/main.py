@@ -1,23 +1,28 @@
-import tic_tac_toe
+import tic_tac_toe as triqui
 
-tablero = tic_tac_toe.CreateBoard()
-# estado_juego = True 
-tic_tac_toe.DisplayBoard(tablero)
+tablero = triqui.CreateBoard()
+triqui.DisplayBoard(tablero)
 while True:
-    tablero = tic_tac_toe.EnterMove(tablero)
-    tic_tac_toe.DisplayBoard(tablero)
-    if  tic_tac_toe.VictoryFor(tablero,"O") == "O":
-        print("gana usuario")
+    tablero = triqui.EnterMove(tablero)
+    triqui.DisplayBoard(tablero)
+    if triqui.VictoryFor(tablero, "O") == "O":
+        print("==============")
+        print(" Gana usuario")
+        print("==============")
         break
-    tablero = tic_tac_toe.DrawMove(tablero)
-    tic_tac_toe.DisplayBoard(tablero)
-    if  tic_tac_toe.VictoryFor(tablero,"X") == "X":
-        print("gana maquina")
+    tablero = triqui.DrawMove(tablero)
+    triqui.DisplayBoard(tablero)
+    if triqui.VictoryFor(tablero, "X") == "X":
+        print("===============")
+        print(" Gana máquina")
+        print("===============")
         break
     # si es empate sale del ciclo
-    if  tic_tac_toe.VictoryFor(tablero,"O") == "tie":
-        print("empate")
+    if triqui.VictoryFor(tablero, "O") == "tie":
+        print("===============")
+        print("   Empate !!!")
+        print("===============")
         break
-print("FIN")
-
-    
+    # else:
+    #     print(triqui.VictoryFor(tablero, "O"))
+# print("FIN")

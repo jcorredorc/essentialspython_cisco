@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
+# Esta 1ra línea indica como se debe ejecutar el archivo en SO Unix
 
+# doc-string
 """" module_test.py - an example of Pyhton module """
 
 __counter = 0
