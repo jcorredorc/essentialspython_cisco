@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
+
 from platform import machine
 from random import randrange, choice
 
-allowed_fields = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+allowed_fields = [1, 2, 3, 4, 5, 6, 7, 8, 9]  # list(range(1,9))
 machine_options = allowed_fields[:]
 board_index = {"1": (0, 0), "2": (0, 1), "3": (0, 2),
                "4": (1, 0), "5": (1, 1), "6": (1, 2),
@@ -117,8 +119,6 @@ def DrawMove(board):
     machine_move = choice(machine_options)
     machine_options.pop(machine_options.index(machine_move))
     # print(machine_options)
-    # while user_move not in allowed_fields:
-    #     user_move=int(input("ingresa tu movimiento: "))
     field_test = board[board_index.get(str(machine_move))[
         0]][board_index.get(str(machine_move))[1]]
     if field_test not in ['O', 'X']:
@@ -171,3 +171,8 @@ if __name__ == "__main__":
     # DrawMove(board)
     VictoryFor(board, "X")
     VictoryFor(board, "O")
+    print("---")
+    print(board)
+    print((board[0][0], board[0][1], board[0][2]))
+    print(board[2][:])
+    print(board[:][2])

@@ -1,4 +1,16 @@
+
+#!/usr/bin/env python3
+
 import tic_tac_toe as triqui
+"""
+El juego siempre inicia con el movimiento de la máquina en el centro del tablero.
+
+Se solicita al usuario que ingrese un número entre 1 y 9 para indicar el moviento 
+en la casilla deseada.
+
+El programa indica si hay un ganador o esta queda en empate.
+
+"""
 
 tablero = triqui.CreateBoard()
 triqui.DisplayBoard(tablero)
@@ -7,7 +19,7 @@ while True:
     triqui.DisplayBoard(tablero)
     if triqui.VictoryFor(tablero, "O") == "O":
         print("==============")
-        print(" Gana usuario")
+        print(" Gana humano")
         print("==============")
         break
     tablero = triqui.DrawMove(tablero)
