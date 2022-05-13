@@ -5,11 +5,10 @@ import tic_tac_toe as triqui
 """
 El juego siempre inicia con el movimiento de la máquina en el centro del tablero.
 
-Se solicita al usuario que ingrese un número entre 1 y 9 para indicar el moviento 
+Se solicita al usuario que ingrese un número entre 1 y 9 para indicar el movimiento 
 en la casilla deseada.
 
-El programa indica si hay un ganador o esta queda en empate.
-
+El programa indica si hay un ganador o queda en empate.
 """
 
 tablero = triqui.CreateBoard()
