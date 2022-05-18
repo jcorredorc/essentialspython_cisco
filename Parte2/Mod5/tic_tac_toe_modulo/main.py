@@ -2,6 +2,7 @@
 #!/usr/bin/env python3
 
 import tic_tac_toe as triqui
+
 """
 El juego siempre inicia con el movimiento de la máquina en el centro del tablero.
 
