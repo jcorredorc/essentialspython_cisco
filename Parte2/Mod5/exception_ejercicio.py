@@ -31,7 +31,7 @@ El número es: 1
 ```
 """
 
-# def test_numbers():
+# def test_numbers(min,max):
 #     ok=True
 #     while ok:
 #         try:
@@ -53,30 +53,37 @@ def readint(min, max):
 #
 # tu codigo aqui
 #
-    flag = True
-    while flag:
+    keep = True
+    while keep:
         try:
             msg="Ingresa un numero de " + str(min) + " a " + str(max) + " : "
             v= int(input(msg))
             # else:
             #     print("fuera de rango")
-            flag = False
             if v > min and v < max:
-                print("en el rango")
-                return v
+                print("en el rango")        
+                keep = False
+                break
+                print("en el rango 2")
+            else:
+                raise ValueError
+        except ValueError:
+            print("no en el rango")
+            keep = True
         except:
             print("Error: entrada incorrecta")
-            flag = True
-    
-    # if v > min and v < max:
-    #     print("en el rango")
-    #     return v
-    # else:
-    #     print("fuera de rango")
-    #     readint(min,max)
-
+            keep = True
+    return v
 
 # v = readint("Ingresa un numero de -10 a 10: ", -10, 10)
 v = readint(-10, 10)
-
 print("El numero es:", v)
+
+
+    # keep=True
+    # while keep:   
+    #     if v > min and v < max:
+    #         print("en el rango")        
+    #         keep = False
+    #     else:
+    #         readint(min,max)
