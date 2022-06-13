@@ -16,4 +16,4 @@
 
 ## Modulo 6
 
-* Fundamentos POO  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jcorredorc/essentialspython_cisco/blob/main/Parte2/Mod6/01-FundamentosClases.ipynb)
+* Fundamentos P.O.O  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jcorredorc/essentialspython_cisco/blob/main/Parte2/Mod6/01-FundamentosClases.ipynb)
