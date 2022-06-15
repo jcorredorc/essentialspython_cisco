@@ -1,8 +1,8 @@
 """Una pila es una estructura donde se almacenan datos.
 La pila a implementar es LIFO (Last In - First Out). Es decir, 
 último en entrar, primero en salir.
-Ej. Una pila de monedas organizada en vertical, la ultima que se coloca
-es la primera que se puede tomar.
+Ej. Una pila de monedas organizada en vertical sobre una mesa, 
+la ultima que se coloca es la primera que se puede tomar.
 """
 
 # ------------------------------
@@ -36,7 +36,7 @@ print(pila)
 # Desventajas:
 # se puede modificar la pila accidentalmente
 # siempre que necesite una pila, debo crear otra lista
-# tal como esta implementada necesitaria crear funciones para cada pila que necesite
+# tal como está implementada necesitaría crear funciones para cada pila que necesite
 
 # ------------------------------
 # Enfoque POO

@@ -1,6 +1,7 @@
 """
 Cómo hacer privada la pila?  osea que no se pueda acceder a la lista
 y poder modificarla?
+Rta: La variable privada se nombra con inicio __ 
 """
 
 
@@ -38,7 +39,7 @@ except:
     """)
 
 """Observe que la siguiente linea de código no genera un error
-y me permite borrar la lista "privada" __listaPila
+y me permitiría borrar la lista "privada" __listaPila
 """
 
 objetoPila.__listaPila = []
@@ -47,10 +48,12 @@ try:
     print("la lista modificada es: ", objetoPila.__listaPila)
     print("la long de lista modificada es: ", len(objetoPila.__listaPila))
 except:
-    print("Esto si genera error ???")
+    print("Esto debería genera error ???")
 
 """
-Se puede considerar que esto es una convención que los programadores deben
-conocer (nombre que inicia con _ _ es privado), pero en realidad Python no impide que se pueda 
-acceder a  la variable privada (otros lenguajes como java, c++, etc si lo permiten)   
+Considerar que los programadores deben respetar la convención (nombre que inicia con 
+_ _ es privado). 
+
+Observemos como podemos acceder o modificar una variable privada en el siguiente 
+script
 """
