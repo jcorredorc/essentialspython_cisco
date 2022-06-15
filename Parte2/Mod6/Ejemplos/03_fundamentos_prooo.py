@@ -3,6 +3,7 @@ Vamos a programar dos métodos (show_var y update_var)) que permitan acceder a l
 lista sin generar error.
 """
 
+
 class Pila:
     def __init__(self):
         self.__listaPila = []
