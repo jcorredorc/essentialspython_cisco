@@ -1,6 +1,6 @@
 """
 Este script muestra como acceder y manipular un objeto de cualquier clase
-en particular, escanea todos los atributos y si empiezan con la letra i
+en particular, escanea todos los atributos. Si empiezan con la letra i
 y son enteros los incrementa en 1
 """
 
