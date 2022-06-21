@@ -1,5 +1,5 @@
 """
-Ejemplo coómo se pueden modificar atributos entre clases
+Ejemplo cómo se pueden modificar atributos entre clases
 por medio de métodos
 
 """
