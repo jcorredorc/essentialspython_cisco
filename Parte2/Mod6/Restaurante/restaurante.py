@@ -1,6 +1,4 @@
 import datetime as dt
-from sys import path
-
 
 class Restaurante():
     def __init__(self, nombre, tipo_cocina, mesas, menu):
